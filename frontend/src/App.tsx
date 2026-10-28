@@ -4,7 +4,51 @@ const API_URL=import.meta.env.VITE_API_URL||'http://localhost:5000'
 type Role='doctor'|'patient'
 type User={role:Role;id:string;name:string;loginId:string;doctorId?:string;specialistDoctorId?:string}
 type RehabType={id:string;name:string;description:string}
-type Patient={id:string;login_id:string;name:string;email:string;phone?:string;date_of_birth?:string;gender?:string;condition?:string;doctor_id?:string;rehabilitation_type_id?:string;rehabilitation_types?:{id?:string;name:string;description?:string};doctors?:{id?:string;name:string;email?:string;specialization?:string};specialist_doctor?:{id?:string;name:string;email?:string;specialization?:string;specialty_focus?:string};specialist_doctor_id?:string}
+
+type Patient = {
+  id: string;
+  login_id: string;
+  name: string;
+  email: string;
+  phone?: string;
+  date_of_birth?: string;
+  gender?: string;
+  condition?: string;
+  doctor_id?: string;
+  rehabilitation_type_id?: string;
+
+  rehabilitation_types?: {
+    id?: string;
+    name: string;
+    description?: string;
+  };
+
+  doctors?: {
+    id?: string;
+    name: string;
+    email?: string;
+    specialization?: string;
+  };
+
+  specialist_doctor?: {
+    id?: string;
+    name: string;
+    email?: string;
+    specialization?: string;
+    specialty_focus?: string;
+  };
+
+  specialist_doctor_id?: string;
+
+  care_doctor?: {
+    id?: string;
+    name: string;
+    email?: string;
+    specialization?: string;
+    specialty_focus?: string;
+  };
+};
+
 type Exercise={id:string;name:string;description:string;video_url?:string;duration_minutes:number;sets:number;repetitions:number;condition_tags?:string;difficulty?:string;recommended?:boolean;reason?:string;source_dataset?:string;source_url?:string;dataset_exercise_label?:string;evidence_note?:string}
 type Assignment={exerciseId:string;sets:number;repetitions:number;frequencyPerDay:number;preferredTime:string;difficulty:string;durationMinutes:number;patientNotes:string}
 async function api(path:string,token?:string,method='GET',body?:unknown){
