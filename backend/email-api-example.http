@@ -1,0 +1,13 @@
+### Health check
+GET http://localhost:5000/api/health
+
+### Send patient welcome email
+POST http://localhost:5000/api/email/patient-welcome
+Content-Type: application/json
+
+{
+  "patientName": "Teena",
+  "patientEmail": "patient@example.com",
+  "doctorName": "Dr. Sharma",
+  "rehabilitationType": "Physical Rehabilitation"
+}

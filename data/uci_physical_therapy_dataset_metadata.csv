@@ -1,0 +1,2 @@
+dataset,subjects,exercise_types,execution_types,instances,sampling_hz,license,doi,url
+UCI Physical Therapy Exercises,5,8,"correct; fast; low-amplitude",268881,25,CC BY 4.0,10.24432/C5JK60,https://archive.ics.uci.edu/dataset/730/physical%2Btherapy%2Bexercises%2Bdataset

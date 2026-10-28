@@ -1,0 +1,4 @@
+exercise_name,dataset_label,condition_focus,source_dataset,source_url
+KneE-PAD Squat,squat,"knee; osteoarthritis; ACL; meniscus; lower-limb mobility",KneE-PAD,https://zenodo.org/records/12112951
+KneE-PAD Seated Leg Extension,seated leg extension,"knee; osteoarthritis; ACL; meniscus; post-surgery",KneE-PAD,https://zenodo.org/records/12112951
+KneE-PAD Gait / Walking,gait / walking,"knee; gait; walking; mobility",KneE-PAD,https://zenodo.org/records/12112951

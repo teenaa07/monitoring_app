@@ -1,0 +1,28 @@
+{
+  "project": "RehabCare",
+  "datasets": [
+    {
+      "name": "KneE-PAD",
+      "doi": "10.5281/zenodo.12112951",
+      "url": "https://zenodo.org/records/12112951",
+      "participants_with_knee_pathologies": 31,
+      "patients_monitored": 267,
+      "files": 2086,
+      "exercise_labels": ["squat", "seated leg extension", "gait / walking"],
+      "modalities": ["sEMG", "IMU"],
+      "integration": "dataset-derived exercise catalog and recommendation evidence"
+    },
+    {
+      "name": "UCI Physical Therapy Exercises",
+      "doi": "10.24432/C5JK60",
+      "url": "https://archive.ics.uci.edu/dataset/730/physical%2Btherapy%2Bexercises%2Bdataset",
+      "subjects": 5,
+      "instances": 268881,
+      "sampling_hz": 25,
+      "exercise_types": 8,
+      "execution_types": ["correct", "fast", "low-amplitude"],
+      "license": "CC BY 4.0",
+      "integration": "dataset provenance and future movement-quality model source"
+    }
+  ]
+}
